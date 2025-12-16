@@ -5,7 +5,7 @@ import static util.MyLogger.log;
 public class SpinLockMain {
 
     public static void main(String[] args) {
-        SpinLockBad spinLock = new SpinLockBad();
+        SpinLock spinLock = new SpinLock();
 
         Runnable task = new Runnable() {
             @Override
