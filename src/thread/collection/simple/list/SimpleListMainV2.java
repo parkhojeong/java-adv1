@@ -1,4 +1,4 @@
-package thread.collection.simple;
+package thread.collection.simple.list;
 
 import static util.MyLogger.log;
 
