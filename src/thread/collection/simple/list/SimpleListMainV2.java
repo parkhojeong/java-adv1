@@ -7,7 +7,9 @@ public class SimpleListMainV2 {
     public static void main(String[] args) throws InterruptedException {
 
 //        test(new BasicList());
-        test(new SyncList());
+        BasicList target = new BasicList();
+        SyncProxyList syncProxyList = new SyncProxyList(target);
+        test(syncProxyList);
     }
 
     private static void test(SimpleList list) throws InterruptedException {
